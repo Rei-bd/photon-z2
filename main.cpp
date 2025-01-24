@@ -146,6 +146,8 @@ int main(int argc, char* argv[]) {
 	double row = rn * coefs["LINE_SCALE"] + coefs["LINE_OFF"];
 	double col = cn * coefs["SAMP_SCALE"] + coefs["SAMP_OFF"];
 
+	cout.precision(4);
+	cout << fixed;
 	cout << "Column: " << col << endl;
 	cout << "Row: " << row << endl;
 }
